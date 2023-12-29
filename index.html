@@ -369,7 +369,7 @@
 
 
         @media screen and (min-width: 1024px) and (max-width: 2565px) {
-          
+
 
             #center {
 
@@ -523,11 +523,19 @@
 
         }
 
+        #contactus {
+            display: none;
+        }
+
         #aboutus:target {
 
 
             display: block;
 
+        }
+
+        #contactus:target {
+            display: block;
         }
 
         :target~#content {
@@ -543,6 +551,54 @@
 
         .moveright {
             margin-left: 0.5rem;
+        }
+
+
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+            color: #000;
+        }
+
+        header {
+            background-color: #000;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin: 10px 0;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0 20px 0;
+            border: 1px solid #ddd;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #000;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
         }
     </style>
 
@@ -587,7 +643,7 @@
 
 
 
-                    <li id="contact"><a href="#" id="a4">Contact us</a></li>
+                    <li id="contact"><a href="#contactus" id="a4">Contact us</a></li>
 
 
 
@@ -796,6 +852,7 @@
 
     </script>
 
+
     <div id="aboutus" style="text-align:center;color:black;margin-top:3rem;">
 
 
@@ -854,6 +911,29 @@
         </div>
 
 
+    </div>
+
+
+    
+    <div id="contactus">
+<br>
+<br>
+<br>
+<br>
+        <section>
+            <form action="https://formsubmit.co/fvision350@gmail.com" method="post">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+    
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="6" required></textarea>
+    
+                <button type="submit">Submit</button>
+            </form>
+        </section>
     </div>
 
 
