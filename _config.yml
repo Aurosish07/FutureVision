@@ -1,0 +1,10 @@
+redirects:
+  - from: "https://www.future-vision.live/"
+    to: "https://future-vision.live/index.html"
+    status: 301
+  - from: "http://future-vision.live/"
+    to: "https://future-vision.live/index.html"
+    status: 301
+  - from: "http://www.future-vision.live/"
+    to: "https://future-vision.live/index.html"
+    status: 301
